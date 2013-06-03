@@ -1,0 +1,30 @@
+{
+    "name": "andrey1s/web-hook",
+    "description": "Web Hook Library",
+    "keywords": ["web hook", "git"],
+    "homepage": "http://andrey1s.github.com/web-hooks/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samusev Andrey"
+        }
+    ],
+    "require": {
+        "symfony/process": "dev-master",
+        "symfony/http-foundation": "dev-master",
+        "psr/log": "~1.0",
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+        "monolog/monolog": "Logging request"
+    },
+    "autoload": {
+        "psr-0": {
+            "WebHook": "lib/",
+            "WebHook\\Test": "test/lib/"
+        }
+    }
+}

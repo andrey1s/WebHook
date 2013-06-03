@@ -1,0 +1,26 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="true"
+         bootstrap="./bootstrap.php"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="true"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         syntaxCheck="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader">
+
+    <testsuites>
+        <testsuite name="WebHook">
+            <directory>./lib/WebHook/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../lib/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
